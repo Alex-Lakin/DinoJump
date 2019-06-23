@@ -15,7 +15,7 @@ public class PauseManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        bool i = Input.GetButtonDown("Pause");
+        bool i = Input.GetButtonDown("Cancel");
         if (i) {
             if (paused) {
                 UnpauseGame();

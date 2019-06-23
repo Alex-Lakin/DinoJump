@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour {
     {
         //foreach (CompletedLevels level in completedLevelList)
         //{
-            //Debug.Log("Level: " + level.levelUnlocked + ".   Best timer: " + level.bestTime);
+        //    Debug.Log("Level: " + level.levelUnlocked + ".   Best timer: " + level.bestTime);
         //} 
     }
 
