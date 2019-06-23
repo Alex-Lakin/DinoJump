@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222964860298571858}
   - component: {fileID: 114022829797910524}
   - component: {fileID: 114480807626101580}
+  - component: {fileID: 114651823193238206}
   m_Layer: 5
   m_Name: Resume button
   m_TagString: Untagged
@@ -323,9 +324,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114361654775144292, guid: 5ab72073074dcfe46bdad64ce4bbe0b3,
-          type: 2}
-        m_MethodName: UnpauseGame
+      - m_Target: {fileID: 114651823193238206}
+        m_MethodName: UnpauseOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -337,6 +337,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114651823193238206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1164962918756876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6e43096e4748a4da110f72ab8d1fde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114656813933951452
 MonoBehaviour:
   m_ObjectHideFlags: 1
