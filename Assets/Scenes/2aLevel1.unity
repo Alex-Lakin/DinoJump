@@ -1000,6 +1000,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114361654775144292, guid: 5ab72073074dcfe46bdad64ce4bbe0b3,
+        type: 2}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1865806772882516, guid: 4aadc21a8c50dc148b510daf7f0906cf,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ab72073074dcfe46bdad64ce4bbe0b3, type: 2}
   m_IsPrefabAsset: 0
@@ -3405,7 +3411,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!4 &1078692566 stripped
 Transform:
@@ -7098,7 +7104,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4446938791320500, guid: 39c94b4caf567814c85f7b702ccf77cf, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39c94b4caf567814c85f7b702ccf77cf, type: 2}

@@ -8,6 +8,8 @@ public class PauseManager : MonoBehaviour {
     private bool paused = false;
     private Player _player;
 
+    [SerializeField] private GameObject pauseMenu;
+
 	// Use this for initialization
 	void Start () {
         _player = GameObject.Find("Dino").GetComponent<Player>();
@@ -36,9 +38,11 @@ public class PauseManager : MonoBehaviour {
         }
 
         _player.lockInputs = true;
+
+        Instantiate(pauseMenu,GameObject.Find("Canvas").transform);
     }
 
-    private void UnpauseGame()
+    public void UnpauseGame()
     {
         paused = false;
         
@@ -50,5 +54,7 @@ public class PauseManager : MonoBehaviour {
         activeObjects = null;
 
         _player.lockInputs = false;
+
+        Destroy(GameObject.Find("Pause menu(Clone)"));
     }
 }

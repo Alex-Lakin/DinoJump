@@ -5032,7 +5032,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!4 &1653318122 stripped
 Transform:
@@ -6645,6 +6645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22ee6a4604c626479252412b2f03e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1865806772882516, guid: 4aadc21a8c50dc148b510daf7f0906cf, type: 2}
 --- !u!4 &2059804061
 Transform:
   m_ObjectHideFlags: 0
