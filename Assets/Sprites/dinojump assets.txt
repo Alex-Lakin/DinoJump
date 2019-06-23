@@ -1,0 +1,37 @@
+assets-
+
+	objects-
+		boulder
+		skeleton
+		upsidedown skeleton
+		floor
+		Felled tree
+		geizer
+
+	Enemies-
+		Steg- runs
+		Tri- runs faster
+		Terra - drops eggs
+		Raptor - jumps
+		Mossie - raises
+		Carno - speeds up
+		anky - moves slow
+		para - runs away
+		Brach - stomps
+		igy - bouncy
+		bronty - raises and lowers in water - platform
+		pleisy - moving platform in water
+		Spino - moving dannger in water
+
+	Enviroments-
+		Desert background
+		Desert foreground
+
+	Menus-
+		title
+		Start Game
+		Options
+		Exit
+		level select
+		Options screen
+	
