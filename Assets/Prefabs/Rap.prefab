@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c1d9b2b9fe87940829104e1fab9cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 20
+  moveForce: 6000
   maxVelocity: 6
   facingRight: 0
 --- !u!212 &212416489304170348

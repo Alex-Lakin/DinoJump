@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbd4a1fbf921db45b517090303770e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paused: 0
 --- !u!114 &114544385828234058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c1d9b2b9fe87940829104e1fab9cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 6
+  moveForce: 1800
   maxVelocity: 2
   facingRight: 0
 --- !u!212 &212051759467432238

@@ -23,7 +23,7 @@ public class EllieMove : MonoBehaviour {
     private void Swim()
     {
         Vector2 pos = transform.position;
-        pos.x += swimSpeed * transform.localScale.x;
+        pos.x += (swimSpeed * transform.localScale.x) * Time.deltaTime;
         transform.position = pos;
     }
 

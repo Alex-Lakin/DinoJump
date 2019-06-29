@@ -74,7 +74,7 @@ public class Player : MonoBehaviour {
             }
         }
 
-        _ridgedBody.AddForce(new Vector2(forceX, forceY));
+        _ridgedBody.AddForce(new Vector2(forceX * Time.deltaTime, forceY) );
     }
 
     public void PlayerDead() {

@@ -27,7 +27,7 @@ public class GeizerErupt : MonoBehaviour {
     }
 
     private void ErruptCounter() {
-        timer++;
+        timer += 1 * Time.deltaTime;
         if (timer == eruptTimerUp)
         {
             _animator.SetBool("Erupting", true);

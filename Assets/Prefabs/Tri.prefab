@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c1d9b2b9fe87940829104e1fab9cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 10
+  moveForce: 2500
   maxVelocity: 4
   facingRight: 0
 --- !u!212 &212721034532520798

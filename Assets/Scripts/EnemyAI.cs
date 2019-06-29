@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour {
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        _ridgedBody.AddForce(new Vector2(forceX, 0));
+        _ridgedBody.AddForce(new Vector2(forceX, 0) * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

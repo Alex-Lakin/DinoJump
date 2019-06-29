@@ -20,10 +20,10 @@ public class TerraLayEggs : MonoBehaviour {
 	void Update () {
 		if (_pauseController.paused == false)
         {
-            if (eggTimer == eggFrequency) {
+            if (eggTimer >= eggFrequency) {
                 LayEgg();
             } else {
-                eggTimer++;
+                eggTimer += 1 * Time.deltaTime;
             }
         }
 	}
