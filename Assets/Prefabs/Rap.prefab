@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa46cd8f185680d4883699d8c0f82da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 140
-  jumpTimer: 3
+  jumpForce: 100
+  jumpTimer: 2
 --- !u!114 &114526365359386864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c1d9b2b9fe87940829104e1fab9cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 6000
+  moveForce: 5000
   maxVelocity: 6
   facingRight: 0
 --- !u!212 &212416489304170348

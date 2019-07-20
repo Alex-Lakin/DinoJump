@@ -6,7 +6,7 @@ public class RaptorJump : MonoBehaviour {
 
     Rigidbody2D _ridgedBody;
 
-    [SerializeField] private float jumpForce = 700f;
+    [SerializeField] private float jumpForce = 0f;
     [SerializeField] private float jumpTimer = 0f;
     private float timer;
 
@@ -15,21 +15,21 @@ public class RaptorJump : MonoBehaviour {
     {
         _ridgedBody = GetComponent<Rigidbody2D>();
         timer = 0;
-        StartCoroutine(JumpCounter());
     }
-	
 
-    IEnumerator JumpCounter()
+    private void Update()
     {
-        yield return new WaitForSeconds(1f);
-        timer++;
+        JumpCounter();
+    }
 
-        if (timer == jumpTimer)
+    private void JumpCounter()
+    {
+        timer += 1 * Time.deltaTime;
+
+        if (timer >= jumpTimer)
         {
             _ridgedBody.AddForce(new Vector2(0, jumpForce));
             timer = 0;
         }
-        
-        StartCoroutine(JumpCounter());
     }
 }

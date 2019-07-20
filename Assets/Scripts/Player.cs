@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     [SerializeField] private float frictionAmount = 0f;
 
     public bool lockInputs = true;
+    private bool rightFacing = true;
 
     void Awake () {
         _animator = GetComponent<Animator>();
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour {
         if (lockInputs == false) { 
             PlayerMove();
         }
+
+        SetFacingScale();
     }
 
     public void PlayerMove()
@@ -47,7 +50,7 @@ public class Player : MonoBehaviour {
             {
                 forceX = moveForce;
             }
-            _animator.SetBool("RightFacing", true);
+            rightFacing = true;
             _animator.SetBool("Move", true);
         } else if (h < 0)
         {
@@ -55,10 +58,9 @@ public class Player : MonoBehaviour {
             {
                 forceX = -moveForce;
             }
-            _animator.SetBool("RightFacing", false);
+            rightFacing = false;
             _animator.SetBool("Move", true);
-        } else
-        {
+        } else {
             Vector2 currentVelocity = _ridgedBody.velocity;
             currentVelocity.x *= frictionAmount;
             _ridgedBody.velocity = currentVelocity;
@@ -75,6 +77,47 @@ public class Player : MonoBehaviour {
         }
 
         _ridgedBody.AddForce(new Vector2(forceX * Time.deltaTime, forceY) );
+    }
+
+    public void SetFacingScale()
+    {
+        /// set facing and adjust for moving platform x flips
+        if (rightFacing)
+        {
+            if (transform.parent != null)
+            {
+                if (transform.parent.localScale.x == 1)
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+                else if (transform.parent.localScale.x == -1)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
+        else
+        {
+            if (transform.parent != null)
+            {
+                if (transform.parent.localScale.x == 1)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                else if (transform.parent.localScale.x == -1)
+                {
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+            }
+            else
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
     }
 
     public void PlayerDead() {

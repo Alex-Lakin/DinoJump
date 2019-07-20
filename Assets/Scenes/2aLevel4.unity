@@ -5988,6 +5988,16 @@ Prefab:
       propertyPath: m_Name
       value: Geizer1
       objectReference: {fileID: 0}
+    - target: {fileID: 114128780783058222, guid: 12a65eba0d924cf4b8ff274153463519,
+        type: 2}
+      propertyPath: eruptTimerUp
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114128780783058222, guid: 12a65eba0d924cf4b8ff274153463519,
+        type: 2}
+      propertyPath: eruptTimerDown
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12a65eba0d924cf4b8ff274153463519, type: 2}
   m_IsPrefabAsset: 0

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   egg: {fileID: 1340979750186424, guid: 2ebc358df2cb42d468781d4d5f2dece6, type: 2}
-  eggFrequency: 3
+  eggFrequency: 2
 --- !u!114 &114825776731557844
 MonoBehaviour:
   m_ObjectHideFlags: 1

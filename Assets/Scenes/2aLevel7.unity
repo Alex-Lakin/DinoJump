@@ -1598,7 +1598,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawner 3
   m_TagString: Untagged
-  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3406,6 +3406,16 @@ Prefab:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114824235640056446, guid: 81a8f5c7272433e469fde5388d608781,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70455574252470028, guid: 81a8f5c7272433e469fde5388d608781,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70408486792302744, guid: 81a8f5c7272433e469fde5388d608781,
         type: 2}
       propertyPath: m_Enabled
       value: 1
@@ -5770,7 +5780,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawner 2
   m_TagString: Untagged
-  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
