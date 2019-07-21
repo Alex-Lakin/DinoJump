@@ -32,6 +32,8 @@ public class Player : MonoBehaviour {
         }
 
         SetFacingScale();
+
+        transform.rotation = Quaternion.identity;
     }
 
     public void PlayerMove()
