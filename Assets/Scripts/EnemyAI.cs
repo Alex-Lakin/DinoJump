@@ -48,7 +48,10 @@ public class EnemyAI : MonoBehaviour {
     {
         if (col.tag == "Ground")
         {
-            facingRight = !facingRight;
+            if (gameObject.tag != "Terra")
+            {
+                facingRight = !facingRight;
+            }
         }
     }
 }
