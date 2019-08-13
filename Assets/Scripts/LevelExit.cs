@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelExit : MonoBehaviour {
 
@@ -15,6 +16,9 @@ public class LevelExit : MonoBehaviour {
         levelTimer = GameObject.Find("LevelTimer").GetComponent<LevelTimer>();
 
         int lastCompletedLevel = levelManager.completedLevelList[levelManager.completedLevelList.Count - 1].levelUnlocked;
+
+        Debug.Log("Last completed level = " + lastCompletedLevel + ", This level = " + levelNumber);
+
         if (lastCompletedLevel == levelNumber)
         {
             levelTimer.DestroyVisableTimer();

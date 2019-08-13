@@ -47,7 +47,7 @@ public class LevelTimer : MonoBehaviour {
     }
 
     public void DestroyVisableTimer() {
-        Destroy(tcGameObject);
+        Destroy(GameObject.Find("TimerCount"));
         timerCounter = null;
     }
 
