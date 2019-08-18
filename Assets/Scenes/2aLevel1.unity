@@ -412,8 +412,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 377968960}
     m_Modifications:
     - target: {fileID: 1262185488642722, guid: 3ef9fa136a75aa9448c2c292a68542f7, type: 3}
-      propertyPath: m_Layer
-      value: 9
+      propertyPath: m_Name
+      value: Dino
       objectReference: {fileID: 0}
     - target: {fileID: 4576293942858068, guid: 3ef9fa136a75aa9448c2c292a68542f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -447,10 +447,17 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 50466534779208076, guid: 3ef9fa136a75aa9448c2c292a68542f7,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
+    - target: {fileID: 4576293942858068, guid: 3ef9fa136a75aa9448c2c292a68542f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576293942858068, guid: 3ef9fa136a75aa9448c2c292a68542f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576293942858068, guid: 3ef9fa136a75aa9448c2c292a68542f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ef9fa136a75aa9448c2c292a68542f7, type: 3}
@@ -6795,16 +6802,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1373550555369104, guid: 39c94b4caf567814c85f7b702ccf77cf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114405408731508466, guid: 39c94b4caf567814c85f7b702ccf77cf,
         type: 3}
       propertyPath: testOb
       value: 
       objectReference: {fileID: 1166982943446242, guid: e4335a394da3bee44865e8c91b47e81d,
         type: 3}
+    - target: {fileID: 1373550555369104, guid: 39c94b4caf567814c85f7b702ccf77cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39c94b4caf567814c85f7b702ccf77cf, type: 3}
 --- !u!4 &2131958747 stripped

@@ -5,18 +5,21 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     Animator _animator;
+    AudioSource _audioSource;
     Rigidbody2D _ridgedBody;
 
     [SerializeField] private float moveForce = 5f;
     [SerializeField] private float jumpForce = 700f;
     [SerializeField] private float maxVelocity = 7f;
     [SerializeField] private float frictionAmount = 0f;
+    [SerializeField] private AudioClip hitSound, jumpSound, landSound;
 
     public bool lockInputs = true;
     private bool rightFacing = true;
 
     void Awake () {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
         _ridgedBody = GetComponent<Rigidbody2D>();
     }
 
@@ -75,6 +78,7 @@ public class Player : MonoBehaviour {
             {
                 forceY = jumpForce;
                 _animator.SetBool("Grounded", false);
+                _audioSource.PlayOneShot(jumpSound, 2f);
             }
         }
 
@@ -128,16 +132,26 @@ public class Player : MonoBehaviour {
         _ridgedBody.velocity = currentVelocity;
         _ridgedBody.AddForce(new Vector2(0, 300));
         _animator.SetBool("Grounded", false);
+        _audioSource.PlayOneShot(hitSound, .5f);
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        bool isGrouned = _animator.GetBool("Grounded");
         if (col.gameObject.tag == "Ground")
         {
-            _animator.SetBool("Grounded", true);
+            if (!isGrouned)
+            {
+                _animator.SetBool("Grounded", true);
+                _audioSource.PlayOneShot(landSound, 2f);
+            }
         } else if (col.gameObject.tag == "MovingPlatform")
         {
-            _animator.SetBool("Grounded", true);
+            if (!isGrouned)
+            {
+                _animator.SetBool("Grounded", true);
+                _audioSource.PlayOneShot(landSound, 2f);
+            }
             transform.SetParent(col.gameObject.transform);
         }
     }
